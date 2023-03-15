@@ -1,9 +1,16 @@
-/* Hello, C++! */
-#include <iostream> // Imports "iostream" library.
-using namespace std; // Makes standard variables be able to be used.
+#include <iostream>
+using namespace std;
 
-int main() // Function executed when the C++ program runs. All the code's gotta be inside of it.
+int main()
 {
-    cout << "Hello, World!"; // "cout" stands for "console out", and it's used together with the "<<" operator to print something out (in this example, "Hello, World!").
+    string characterFirstName = "John";
+    string characterLastName = "Doe";
+    int characterAge = 80;
+
+    cout << "There once was a man named " << characterFirstName << " " << characterLastName << "..." << endl;
+    cout << "He was " << characterAge << " years old..." << endl;
+    cout << "He liked the name 'Doe'..." << endl;
+    cout << "But did not like being " << characterAge << "..." << endl;
+
     return 0;
 }
