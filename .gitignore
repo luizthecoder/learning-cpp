@@ -1,2 +1,5 @@
 # binary files (trash...)
 /hello
+
+# GH access token
+/.gh-access-token.txt
