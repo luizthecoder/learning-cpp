@@ -1,26 +1,16 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int main()
 {
-    /*
-      * Some data types in C++:
-      *
-      * 1. char - Single-character text.
-      * 2. string - Multi-character text.
-      * 3. int - Integer numbers.
-      * 4. float - Floating-point numbers.
-      * 5. double - An "extension" for the float type (most used).
-      * 6. bool - Boolean values.
-    */
+    /* It's gonna print out the MBI of an imaginary person. */
 
-    char firstLetterOfMyName = 'L';
-    string myName = "Louis L.";
-    int myAge = 16; // MAY NOT use floating point with integers!
-    double myHeight = 1.7;
-    bool isTall = true;
+    double mass = 70.5; // (in kilograms)
+    double height = 1.7; // (in meters)
+    double bmi = round(mass / pow(height, 2));
 
-    cout << "Hi! The first letter of my name is '" << firstLetterOfMyName << "' (because my name is '" << myName << "'). I am " << myAge << ", and my height is " << myHeight << "m :D" << endl;
+    cout << "My mass is equal to " << mass << "kg and my height is equal to/about " << height << "m. Then, my BMI is equal to " << bmi << "kg/m2." << endl;
 
     return 0;
 }
